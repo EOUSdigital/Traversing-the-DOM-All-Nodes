@@ -1,0 +1,144 @@
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html, body { height: 100%; }
+
+body {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    color: var(--fg);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    margin: 1.5rem;
+    line-height: 1.5;
+}
+
+#main {
+    max-width: 60rem;
+    width: 100%;
+    margin: 0 2rem;
+}
+
+#hero h1 {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Tasks */
+
+.tasks, .nav-link {
+    margin-bottom: 1.5rem;
+    padding-left: 1.25rem;
+    text-decoration: none;
+    list-style: none;
+}
+
+.highlight {
+    background-color: #ffd700;
+    font-weight: bold;
+}
+
+/* Cards grid */
+
+.grid {
+    display: flex;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.card {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: .5rem;
+    min-width: 7rem;
+}
+
+.card--even {
+    background-color: #800020;
+}
+
+/* Nav */
+
+.nav-link {
+    display: flex;
+    list-style: none;
+    gap: .75rem;
+    margin-bottom: 1.5rem;
+    padding-left: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link .item {
+    display: inline-block;
+    list-style: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 600;
+    border-radius: .5rem;
+    padding: .7rem 1.5rem;
+    margin: 1rem 3rem;
+    color: #fff;
+    background: #000a47;
+    line-height: 1.15;
+    font-size: 1rem;
+}
+
+.nav-link .item:hover {
+    transition: all .3s ease;
+    box-shadow: 0 0 0 0 #fff, 0 0 0 3px #1de9b6;
+}
+
+.nav-link--even {
+    text-decoration: underline;
+}
+
+/* Button decoration */
+
+.two .btn{
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    text-align: center;
+    border: .1rem solid #babfc3;
+    min-height: 2rem;
+    min-width: 2rem;
+    color: #000000;
+    background: #ffffff;
+    border-radius: .3rem;
+    font-weight: 500;
+    font-size: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 0px 0px;
+    
+    margin-top: 3rem;
+    padding: .3rem .7rem;
+    gap: 3rem;
+}
+
+.two .btn:hover {
+    background: #f6f6f7;
+    outline: .1rem solid transparent;
+        color: #4f4f4f;
+}
+
+/* LESSON 6 */
+
+.sibling-highlight {
+    background-color: #fff3cd;
+}
+
+.sibling-strong {
+    font-weight: bold;
+}
+
+.section-active {
+    outline: 2px solid #007bff;
+}
+
+.grid-relative {
+    border: 2px solid #007bff;
+}
